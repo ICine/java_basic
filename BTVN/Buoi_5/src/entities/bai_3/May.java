@@ -9,33 +9,38 @@ public class May {
 
     public May() {
     }
+
     public May(String maMay, String tenMay, String tinhTrang) {
         MaMay = maMay;
         TenMay = tenMay;
         TinhTrang = tinhTrang;
     }
+
     public String getMaMay() {
         return MaMay;
     }
+
     public void setMaMay(String maMay) {
         MaMay = maMay;
     }
+
     public String getTenMay() {
         return TenMay;
     }
+
     public void setTenMay(String tenMay) {
         TenMay = tenMay;
     }
+
     public String getTinhTrang() {
         return TinhTrang;
     }
+
     public void setTinhTrang(String tinhTrang) {
         TinhTrang = tinhTrang;
     }
-    
-    public void Nhap(){
-        Scanner sc = new Scanner(System.in);
-        
+
+    public void Nhap(Scanner sc) {
         System.out.print("Nhap ma may: ");
         this.MaMay = sc.nextLine();
         System.out.print("Nhap ten may: ");
@@ -44,8 +49,8 @@ public class May {
         this.TinhTrang = sc.nextLine();
     }
 
-    public void Xuat(){
-
+    public void Xuat() {
+        System.out.printf("%-15s%-15s%-10s%n", this.MaMay, this.TenMay, this.TinhTrang);
     }
-    
+
 }

@@ -25,9 +25,7 @@ public class QuanLy {
         HoTen = hoTen;
     }
 
-    public void Nhap() {
-        Scanner sc = new Scanner(System.in);
-
+    public void Nhap(Scanner sc) {
         System.out.print("Nhap ma QL: ");
         this.MaQL = sc.nextLine();
         System.out.print("Nhap ten QL: ");
@@ -35,7 +33,7 @@ public class QuanLy {
     }
 
     public void Xuat() {
-
+        System.out.println("Ma QL: " + this.MaQL + ", Ho Ten: " + this.HoTen);
     }
 
 }
