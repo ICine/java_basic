@@ -52,16 +52,14 @@ public class Student {
         this.y = y;
     }
 
-    public void input() {
-        Scanner sc = new Scanner(System.in);
-
+    public void input(Scanner sc) {
         System.out.print("Nhap ten sv: ");
         Name = sc.nextLine();
         System.out.print("Nhap lop sv: ");
         CLass = sc.nextLine();
         System.out.print("Nhap diem sv: ");
         Score = sc.nextDouble();
-        y.input();
+        y.input(sc);
     }
 
     public void output() {
