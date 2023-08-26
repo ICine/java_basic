@@ -49,7 +49,7 @@ public class Faculty {
     }
 
     public void output() {
-        System.out.printf("%-20s%-10s%n", Name, Date);
+        System.out.printf("%-20s%-10s", Name, Date);
         x.output();
 
     }

@@ -20,6 +20,10 @@ public class Student {
         this.y = y;
     }
 
+    public int getCounter(){
+        return counter;
+    }
+
     public String getName() {
         return Name;
     }
@@ -58,12 +62,12 @@ public class Student {
         System.out.print("Nhap lop sv: ");
         CLass = sc.nextLine();
         System.out.print("Nhap diem sv: ");
-        Score = sc.nextDouble();
+        Score = Double.parseDouble(sc.nextLine());
         y.input(sc);
     }
 
     public void output() {
-        System.out.printf("%-20s%-10s%-10s%n", Name, CLass, Score);
+        System.out.printf("%-20s%-10s%-10s", Name, CLass, Score);
         y.output();
     }
 

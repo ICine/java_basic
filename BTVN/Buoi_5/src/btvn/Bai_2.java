@@ -5,12 +5,15 @@ import java.util.Scanner;
 import entities.bai_2.Student;
 
 public class Bai_2 {
+    public static void title(){
+        System.out.printf("%-20s%-10s%-10s%-20s%-10s%-20s%-10s%n", "TEN SV", "LOP SV", "DIEM SV", "KHOA", "NGAY KHOA", "TRUONG", "NGAY TRUONG");
+    }
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         int n;
         while (true) {
-            Scanner sc = new Scanner(System.in);
             System.out.print("Nhap so luong hoc sinh: ");
-            n = sc.nextInt();
+            n = Integer.parseInt(sc.nextLine());
             if (n <= 0)
                 System.out.println("Invalid input");
             else
@@ -18,12 +21,15 @@ public class Bai_2 {
         }
         Student[] students = new Student[n];
 
+        
         for (int i = 0; i < students.length; i++) {
+            System.out.println("\nNhap sinh vien thu " + (i+ 1)+": ");
             students[i] = new Student();
-            students[i].input();
+            students[i].input(sc);
         }
 
         System.out.println("\n\n");
+        title();
         for (Student i : students) {
             i.output();
         }

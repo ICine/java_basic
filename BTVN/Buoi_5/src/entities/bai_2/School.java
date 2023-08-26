@@ -26,6 +26,7 @@ public class School {
     }
 
     public School() {
+        // Cái này em set trực tiếp luôn để không phải gõ lại phần input anh ạ
         this.Name = "HaUi";
         this.Date = "10/08/1898";
     }
