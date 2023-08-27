@@ -40,12 +40,15 @@ public class Hang {
     public Hang() {
     }
 
-    public void Nhap(Scanner sc) {
+    public void Nhap() {
+        Scanner sc = new Scanner(System.in);
+
         System.out.print("Nhap ma hang: ");
         MaHang = sc.nextLine();
         System.out.print("Nhap ten hang: ");
         TenHang = sc.nextLine();
-        x.Nhap(sc);
+        x.Nhap();
+        sc.close();
     }
 
     public void Xuat() {

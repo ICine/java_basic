@@ -10,7 +10,7 @@ public class Student {
     private static int counter = 0;
 
     public Student() {
-        counter ++ ;
+        counter++;
     }
 
     public Student(String name, String class1, Double score, Faculty y) {
@@ -20,7 +20,7 @@ public class Student {
         this.y = y;
     }
 
-    public int getCounter(){
+    public int getCounter() {
         return counter;
     }
 
@@ -56,14 +56,15 @@ public class Student {
         this.y = y;
     }
 
-    public void input(Scanner sc) {
+    public void input() {
+        Scanner sc = new Scanner(System.in);
         System.out.print("Nhap ten sv: ");
         Name = sc.nextLine();
         System.out.print("Nhap lop sv: ");
         CLass = sc.nextLine();
         System.out.print("Nhap diem sv: ");
         Score = Double.parseDouble(sc.nextLine());
-        y.input(sc);
+        y.input();
     }
 
     public void output() {

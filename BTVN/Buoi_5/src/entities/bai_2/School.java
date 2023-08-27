@@ -31,7 +31,7 @@ public class School {
         this.Date = "10/08/1898";
     }
 
-    public void output(){
+    public void output() {
         System.out.printf("%-20s%-10s%n", Name, Date);
     }
 }

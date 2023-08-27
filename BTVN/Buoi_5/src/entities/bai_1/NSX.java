@@ -41,13 +41,15 @@ public class NSX {
 
     }
 
-    public void Nhap(Scanner sc ) {
+    public void Nhap() {
+        Scanner sc = new Scanner(System.in);
         System.out.print("Nhap MaNSX: ");
         MaNSX = sc.nextLine();
         System.out.print("Nhap TenNSX: ");
         TenNSX = sc.nextLine();
         System.out.print("Nhap DcNSX: ");
         DcNSX = sc.nextLine();
+        sc.close();
     }
 
     public void Xuat() {

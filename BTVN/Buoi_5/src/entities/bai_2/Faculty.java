@@ -41,7 +41,8 @@ public class Faculty {
         this.x = x;
     }
 
-    public void input(Scanner sc ){
+    public void input() {
+        Scanner sc = new Scanner(System.in);
         System.out.print("Nhap ten khoa: ");
         Name = sc.nextLine();
         System.out.print("Nhap ngay: ");
