@@ -25,7 +25,8 @@ public class QuanLy {
         HoTen = hoTen;
     }
 
-    public void Nhap(Scanner sc) {
+    public void Nhap() {
+        Scanner sc = new Scanner(System.in);
         System.out.print("Nhap ma QL: ");
         this.MaQL = sc.nextLine();
         System.out.print("Nhap ten QL: ");

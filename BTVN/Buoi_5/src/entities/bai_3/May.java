@@ -40,7 +40,8 @@ public class May {
         TinhTrang = tinhTrang;
     }
 
-    public void Nhap(Scanner sc) {
+    public void Nhap() {
+        Scanner sc = new Scanner(System.in);
         System.out.print("Nhap ma may: ");
         this.MaMay = sc.nextLine();
         System.out.print("Nhap ten may: ");

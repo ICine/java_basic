@@ -73,7 +73,8 @@ public class PhongMay {
         System.out.printf("%-15s%-15s%-10s%n", "MaMay", "TenMay", "TinhTrang");
     }
 
-    public void Nhap(Scanner sc) {
+    public void Nhap() {
+        Scanner sc = new Scanner(System.in);
         // Input Phong may
         System.out.print("Nhap ma phong: ");
         this.MaPhong = sc.nextLine();
@@ -83,7 +84,7 @@ public class PhongMay {
         this.DienTich = Double.parseDouble(sc.nextLine());
 
         // Input Quan ly
-        x.Nhap(sc);
+        x.Nhap();
 
         // Input nhap may
         while (true) {
@@ -99,7 +100,7 @@ public class PhongMay {
         for (int i = 0; i < y.length; i++) {
             System.out.println("Nhap may thu " + (i + 1) + ": ");
             y[i] = new May();
-            y[i].Nhap(sc);
+            y[i].Nhap();
         }
     }
 
