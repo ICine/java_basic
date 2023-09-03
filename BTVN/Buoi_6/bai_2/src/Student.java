@@ -44,17 +44,17 @@ public class Student extends Person {
     public void input() {
         super.input();
         Scanner sc = new Scanner(System.in);
-        System.out.print("Nhap id");
+        System.out.print("Nhap id: ");
         this.id = sc.nextLine();
-        System.out.print("Nhap lop");
+        System.out.print("Nhap lop: ");
         this.CLass = sc.nextLine();
-        System.out.print("Nhap truong");
+        System.out.print("Nhap truong: ");
         this.school = sc.nextLine();
     }
 
     @Override
     public void output() {
-        System.out.print("id=" + id + ", CLass=" + CLass + ", school=" + school + "]");
+        System.out.print("id=" + id + ", CLass=" + CLass + ", school=" + school + ", ");
         super.output();
         System.out.println();
     }

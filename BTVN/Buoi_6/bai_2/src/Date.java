@@ -41,16 +41,15 @@ public class Date {
 
     public void input(){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Nhap nam");
+        System.out.print("Nhap nam: ");
         this.year= sc.nextByte();
-        System.out.print("Nhap thang");
+        System.out.print("Nhap thang: ");
         this.month= sc.nextByte();
-        System.out.print("Nhap ngay");
+        System.out.print("Nhap ngay: ");
         this.day= sc.nextByte();
     }
 
-
     public void output(){
-        System.out.print(year + "/" + month + "/" + day);
+        System.out.print(this.year + "/" + this.month + "/" + this.day);
     }
 }

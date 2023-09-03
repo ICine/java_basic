@@ -6,8 +6,8 @@ public class Person {
     protected String address;
     protected Date birthDay;
 
-    public Person(){
-
+    public Person() {
+        birthDay = new Date();
     }
 
     public Person(String name, Byte age, String address, Date birthDay) {
@@ -49,21 +49,27 @@ public class Person {
         this.birthDay = birthDay;
     }
 
-    public void input(){
+    public void input() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Nhap ten");
-        this.name= sc.nextLine();
-        System.out.print("Nhap tuoi");
-        this.age= sc.nextByte();
-                System.out.print("Nhap dia chi");
-        this.address= sc.nextLine();
+        System.out.print("Nhap ten: ");
+        this.name = sc.nextLine();
+        System.out.print("Nhap tuoi: ");
+        this.age = sc.nextByte();
+        sc.nextLine();
+        System.out.print("Nhap dia chi: ");
+        this.address = sc.nextLine();
 
-        System.out.print("Nhap sinh nhat");
+        System.out.println("Nhap sinh nhat: ");
         birthDay.input();
     }
 
-    public void output(){
-        System.out.print("name=" + name + ", age=" + age + ", address=" + address+"     ");
+    public void output() {
+        System.out.print("name=" + name + ", age=" + age + ", address=" + address + "     ");
         birthDay.output();
+    }
+
+    @Override
+    public String toString() {
+        return "Person [name=" + name + ", age=" + age + ", address=" + address + ", birthDay=" + birthDay + "]";
     }
 }
